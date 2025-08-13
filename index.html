@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="no" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jules - Digital Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="font-bold text-lg">Jules</div>
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-2 text-sm">
+                    <span class="relative flex h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                    </span>
+                    <span>Available</span>
+                </div>
+                <button id="menu-btn" class="w-8 h-8 flex flex-col justify-center items-center space-y-1.5 md:hidden">
+                    <span class="block w-5 h-0.5 bg-gray-800"></span>
+                    <span class="block w-5 h-0.5 bg-gray-800"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 pt-24">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center py-20 opacity-0">
+            <img src="images/profile.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg">
+            <h1 class="text-5xl md:text-7xl font-bold mb-2">Jules</h1>
+            <p class="text-xl md:text-2xl text-gray-500 mb-6">Digital Designer</p>
+            <p class="max-w-2xl mx-auto text-gray-600">
+                I create clean, modern, and intuitive digital experiences. With a passion for minimalist design and user-centric solutions, I help brands connect with their audience.
+            </p>
+        </section>
+
+        <!-- Awards & Recognitions Section -->
+        <section id="awards" class="py-20 opacity-0">
+            <h2 class="text-3xl font-bold mb-10 text-center">Awards & Recognitions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Award Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover-lift">
+                    <h3 class="font-bold text-lg mb-2">Nordic Design Prize</h3>
+                    <p class="text-gray-500 mb-1">Winner, 2023</p>
+                    <p class="text-sm text-gray-600">Recognized for outstanding contribution to digital minimalism.</p>
+                </div>
+                <!-- Award Card 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover-lift">
+                    <h3 class="font-bold text-lg mb-2">Awwwards Site of the Day</h3>
+                    <p class="text-gray-500 mb-1">Nominee, 2022</p>
+                    <p class="text-sm text-gray-600">Nominated for an interactive portfolio project.</p>
+                </div>
+                <!-- Award Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover-lift">
+                    <h3 class="font-bold text-lg mb-2">Webby Awards</h3>
+                    <p class="text-gray-500 mb-1">Honoree, 2021</p>
+                    <p class="text-sm text-gray-600">Honored for best user interface design in a web application.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 opacity-0">
+            <h2 class="text-3xl font-bold mb-10 text-center">Selected Work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Project Card 1 -->
+                <div class="project-card bg-white rounded-xl shadow-md overflow-hidden hover-lift">
+                    <img src="images/project1.jpg" alt="Project 1" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Brand Redesign for FinTech Co.</h3>
+                        <p class="text-gray-600">A complete visual identity and web redesign for a leading financial technology company.</p>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card bg-white rounded-xl shadow-md overflow-hidden hover-lift">
+                    <img src="images/project2.jpg" alt="Project 2" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Mobile App for Wellness</h3>
+                        <p class="text-gray-600">UI/UX design for a mobile application focused on mindfulness and mental well-being.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="text-center py-20 opacity-0">
+            <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+            <p class="max-w-lg mx-auto text-gray-600 mb-8">
+                Have a project in mind or just want to say hello? Feel free to reach out.
+            </p>
+            <a href="mailto:jules@example.com" class="bg-gray-800 text-white font-bold py-3 px-8 rounded-lg hover:bg-gray-700 transition-colors duration-300">
+                Get in Touch
+            </a>
+        </section>
+    </main>
+
+    <footer class="text-center py-6 text-sm text-gray-400">
+        <p>&copy; 2024 Jules. All Rights Reserved.</p>
+    </footer>
+
+    <!-- GSAP and ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
